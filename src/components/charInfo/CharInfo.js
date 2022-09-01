@@ -81,17 +81,17 @@ class CharInfo extends React.Component {
 
 const View = ({ char }) => {
     const { name, thumbnail, description, homepage, wiki, comics } = char;
-    let imgStyle = {'objectFit' : 'cover'};
+    let imgStyle = { 'objectFit': 'cover' };
     if (thumbnail === 'http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg') {
-        imgStyle = {'objectFit' : 'contain'};
+        imgStyle = { 'objectFit': 'contain' };
     }
     return (
         <>
             <div className="char__basics">
-                <img 
-                    src={thumbnail} 
-                    alt={name} 
-                    style={imgStyle}/>
+                <img
+                    src={thumbnail}
+                    alt={name}
+                    style={imgStyle} />
                 <div>
                     <div className="char__info-name">{name}</div>
                     <div className="char__btns">
